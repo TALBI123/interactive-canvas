@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #112;
+        flex-direction: column;
+      }
+      div {
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        height: 400px;
+        align-items: center;
+        /* filter: blur(2px); */
+        padding: 2px;
+        z-index: 2 !important;
+        border-radius: 3px;
+        background-image: linear-gradient(var(--angle), tomato, #4070f4);
+        animation: 2s animation cubic-bezier(0.23, 1, 0.320, 1) infinite;
+      }
+      canvas {
+        /* background-image: radial-gradient(#4070f4, #1843bb); */
+        background-color: #112;
+        border-radius: 4px;
+      }
+      @property --angle {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+      }
+      @keyframes animation {
+        0% {
+          --angle: 0deg;
+        }
+        100% {
+          --angle: 360deg;
+        }
+      }
+      h1{
+        color: azure;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gaza</h1>
+    <div>
+      <canvas width="300" height="400"></canvas>
+    </div>
+    <script src="scriptMouse.js"></script>
+  </body>
+</html>

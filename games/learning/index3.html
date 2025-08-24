@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #canvas{
+            border: 2px black solid;
+
+        }
+        .assets{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script >
+        const canvas = document.querySelector('#canvas');
+        const ctx = canvas.getContext("2d");
+        canvas.width = 300;
+        canvas.height = 400;
+        // ctx.fillStyle = 'red';
+        ctx.strokeRect(canvas.width/2,canvas.height/2 ,canvas.width/2,canvas.height/2);
+    </script>
+</body>
+</html>

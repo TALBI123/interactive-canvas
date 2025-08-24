@@ -1,0 +1,33 @@
+
+# Fichiers temporaires
+*.tmp
+*.temp
+tempCodeRunnerFile.js
+
+# Dossiers de dépendances
+node_modules/
+vendor/
+
+# Fichiers d'environnement
+.env
+.env.local
+
+# Fichiers de build
+dist/
+build/
+*.min.js
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Dossiers d'images (si elles sont volumineuses)
+*.webp
+*.png
+*.jpg
+*.jpeg
+*.gif

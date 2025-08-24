@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #112;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+      }
+      canvas {
+        border: red 1px solid;
+      }
+      .colors {
+        width: 300px;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .colors * {
+        background-color: var(--clr);
+        width: 40px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border: 2px azure solid;
+        cursor: pointer;
+      }
+      .download-btn{
+        background-color: var(--clr);
+        width: 150px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: azure;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas width="300" height="300"></canvas>
+    <div class="colors">
+      <div class="color" style="--clr: #4070f4"></div>
+      <div class="color" style="--clr: tomato"></div>
+      <div class="color" style="--clr: green"></div>
+      <div class="color" style="--clr: blue"></div>
+    </div>
+    <div class="download-btn" style="--clr: #4070f4">download</div>
+    <script src="script2.js"></script>
+  </body>
+</html>

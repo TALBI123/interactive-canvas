@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        canvas{
+            border: 2px black solid;
+        }
+        .assets{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <canvas></canvas>
+    <div class="assets">
+        <img src="./assets/level1.png" class="bglevel1" alt="">
+        <img src="./assets/level2.png" class="foregroundlv1" alt="">
+        <img src="./assets/hero.png" class="hero" alt="">
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
